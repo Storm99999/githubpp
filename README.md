@@ -1,6 +1,9 @@
 # GitHubPP
 Official GitHub++ Repository 
 
+# Requirements
+Switch your default theme to "Dark dimmed" in Settings -> Appearance
+
 # Installation
 * Install tampermonkey, https://chrome.google.com/webstore/search/tampermonkey
 * Click on "Create new userscript"
