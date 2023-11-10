@@ -17,9 +17,7 @@
     --font-size-small: 0.75rem;
   }
 
-  body {
-    background-color: #282A36;
-  }
+  body { background-color: #282A36; }
   
   [data-color-mode=light][data-light-theme=dark_dimmed],
   [data-color-mode=light][data-light-theme=dark_dimmed]::selection,
