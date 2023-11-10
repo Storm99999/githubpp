@@ -12,7 +12,7 @@
 (function() {
     'use strict';
 
-    var theme = "TokyoNight"
+    var theme = "Aura"
 
     function main() {
         const injectCSS = css => {
@@ -25,7 +25,8 @@
 
         let theme_storage = {
             "Dracula": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/dracula/dracula_main.css",
-            "TokyoNight": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/tokyo_night/tokyo_night_main.css"
+            "TokyoNight": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/tokyo_night/tokyo_night_main.css",
+            "Aura": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/aura/aura_main.css"
         };
 
         // Injection process
