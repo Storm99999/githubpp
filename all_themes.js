@@ -1,1 +1,1 @@
-return ['Dracula', 'TokyoNight'] 
+return ['Dracula', 'TokyoNight', 'Aura'] 
