@@ -12,6 +12,7 @@ Switch your default theme to "Dark dimmed" in Settings -> Appearance
 * Profit, you can change themes depending on your liking!
 
 # Preview
+Extended previews, of all themes, can be found in ./preview/ 
 ![](https://media.discordapp.net/attachments/1153048987700559873/1172304920620310648/image.png?ex=655fd509&is=654d6009&hm=a7bdcddba85a24910202ef7d792bde72bb9fe4c50308ee9f60662b71d4237add&=&width=1175&height=671)
 
 # Contributions
