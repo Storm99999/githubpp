@@ -1,0 +1,7 @@
+C:\Users\Admin\source\repos\gppcreator\gppcreator\bin\Debug\gppcreator.exe.config
+C:\Users\Admin\source\repos\gppcreator\gppcreator\bin\Debug\gppcreator.exe
+C:\Users\Admin\source\repos\gppcreator\gppcreator\bin\Debug\gppcreator.pdb
+C:\Users\Admin\source\repos\gppcreator\gppcreator\obj\Debug\gppcreator.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\gppcreator\gppcreator\obj\Debug\gppcreator.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\gppcreator\gppcreator\obj\Debug\gppcreator.exe
+C:\Users\Admin\source\repos\gppcreator\gppcreator\obj\Debug\gppcreator.pdb
