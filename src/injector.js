@@ -1,3 +1,4 @@
+/* THIS IS ONLY SOURCE CODE, --> NOT <-- THE TAMPERMONKEY SCRIPT. IT IS OUTDATED, AND WILL NOT HAVE ANY MORE THEMES. */
 var theme = "Dracula"
 
 function main() {
