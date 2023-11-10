@@ -11,7 +11,8 @@ Uses a `color dump` from gpptool to convert into a fully functional theme
 Make sure to actually replace the colordump path with your own that you obtained from `gpptool`
 
 # Recommendations
-If you are lost and do not understand what is meant by secondary color, it's basically like the **sidebar** of visual studio code, Screenshot the color of it, and https://imagecolorpicker.com can help you obtain the secondary color from the sidebar image.
+* If you are lost and do not understand what is meant by secondary color, it's basically like the **sidebar** of visual studio code, Screenshot the color of it, and https://imagecolorpicker.com can help you obtain the secondary color from the sidebar image.
+* There's multiple things in the colordump that are duplicated?? No. That is wrong, they're different in someway. If you do not know which one to pick, you can take inspiration from other themes
 
 # What to do after
 Incase you want to help make gpp more great, you can open a pull request and add in the theme, it must not be total garbage though. Otherwise if it's for your private use, do not worry. Theres a guide.
