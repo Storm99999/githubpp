@@ -1,4 +1,4 @@
-/*# CSS mapped by newguy, Thanks to Aura, VSCode Theme for the colors. */
+/*# CSS mapped by newguy, Thanks to the VSCode Aura theme for Colors! */
 :root {
     --h00-size-mobile: 2.5rem;
     --h0-size-mobile: 2rem;
@@ -103,7 +103,7 @@
     --color-checks-text-link: #539bf5;
     --color-checks-btn-icon: #768390;
     --color-checks-btn-hover-icon: #adbac7;
-    --color-checks-btn-hover-bg: #44475A75;
+    --color-checks-btn-hover-bg: #2E2B38;
     --color-checks-input-text: #768390;
     --color-checks-input-placeholder-text: #636e7b;
     --color-checks-input-focus-text: #adbac7;
@@ -118,9 +118,9 @@
     --color-checks-dropdown-border: #444c56;
     --color-checks-dropdown-shadow: rgba(28,33,40,0.3);
     --color-checks-dropdown-hover-text: #adbac7;
-    --color-checks-dropdown-hover-bg: #44475A75;
+    --color-checks-dropdown-hover-bg: #2E2B38;
     --color-checks-dropdown-btn-hover-text: #adbac7;
-    --color-checks-dropdown-btn-hover-bg: #44475A75;
+    --color-checks-dropdown-btn-hover-bg: #2E2B38;
     --color-checks-scrollbar-thumb-bg: rgba(99,110,123,0.4);
     --color-checks-header-label-text: #768390;
     --color-checks-header-label-open-text: #adbac7;
@@ -129,7 +129,7 @@
     --color-checks-line-text: #768390;
     --color-checks-line-num-text: #636e7b;
     --color-checks-line-timestamp-text: #636e7b;
-    --color-checks-line-hover-bg: #44475A75;
+    --color-checks-line-hover-bg: #2E2B38;
     --color-checks-line-selected-bg: rgba(65,132,228,0.1);
     --color-checks-line-selected-num-text: #539bf5;
     --color-checks-line-dt-fm-text: #cdd9e5;
@@ -554,7 +554,7 @@
       --color-checks-text-link: #539bf5;
       --color-checks-btn-icon: #768390;
       --color-checks-btn-hover-icon: #adbac7;
-      --color-checks-btn-hover-bg: #44475A75;
+      --color-checks-btn-hover-bg: #2E2B38;
       --color-checks-input-text: #768390;
       --color-checks-input-placeholder-text: #636e7b;
       --color-checks-input-focus-text: #adbac7;
@@ -569,9 +569,9 @@
       --color-checks-dropdown-border: #444c56;
       --color-checks-dropdown-shadow: rgba(28,33,40,0.3);
       --color-checks-dropdown-hover-text: #adbac7;
-      --color-checks-dropdown-hover-bg: #44475A75;
+      --color-checks-dropdown-hover-bg: #2E2B38;
       --color-checks-dropdown-btn-hover-text: #adbac7;
-      --color-checks-dropdown-btn-hover-bg: #44475A75;
+      --color-checks-dropdown-btn-hover-bg: #2E2B38;
       --color-checks-scrollbar-thumb-bg: rgba(99,110,123,0.4);
       --color-checks-header-label-text: #768390;
       --color-checks-header-label-open-text: #adbac7;
@@ -580,7 +580,7 @@
       --color-checks-line-text: #768390;
       --color-checks-line-num-text: #636e7b;
       --color-checks-line-timestamp-text: #636e7b;
-      --color-checks-line-hover-bg: #44475A75;
+      --color-checks-line-hover-bg: #2E2B38;
       --color-checks-line-selected-bg: rgba(65,132,228,0.1);
       --color-checks-line-selected-num-text: #539bf5;
       --color-checks-line-dt-fm-text: #cdd9e5;
@@ -1006,7 +1006,7 @@
       --color-checks-text-link: #539bf5;
       --color-checks-btn-icon: #768390;
       --color-checks-btn-hover-icon: #adbac7;
-      --color-checks-btn-hover-bg: #44475A75;
+      --color-checks-btn-hover-bg: #2E2B38;
       --color-checks-input-text: #768390;
       --color-checks-input-placeholder-text: #636e7b;
       --color-checks-input-focus-text: #adbac7;
@@ -1021,9 +1021,9 @@
       --color-checks-dropdown-border: #444c56;
       --color-checks-dropdown-shadow: rgba(28,33,40,0.3);
       --color-checks-dropdown-hover-text: #adbac7;
-      --color-checks-dropdown-hover-bg: #44475A75;
+      --color-checks-dropdown-hover-bg: #2E2B38;
       --color-checks-dropdown-btn-hover-text: #adbac7;
-      --color-checks-dropdown-btn-hover-bg: #44475A75;
+      --color-checks-dropdown-btn-hover-bg: #2E2B38;
       --color-checks-scrollbar-thumb-bg: rgba(99,110,123,0.4);
       --color-checks-header-label-text: #768390;
       --color-checks-header-label-open-text: #adbac7;
@@ -1032,7 +1032,7 @@
       --color-checks-line-text: #768390;
       --color-checks-line-num-text: #636e7b;
       --color-checks-line-timestamp-text: #636e7b;
-      --color-checks-line-hover-bg: #44475A75;
+      --color-checks-line-hover-bg: #2E2B38;
       --color-checks-line-selected-bg: rgba(65,132,228,0.1);
       --color-checks-line-selected-num-text: #539bf5;
       --color-checks-line-dt-fm-text: #cdd9e5;
