@@ -2,7 +2,7 @@
 // @name         GitHub++
 // @namespace    https://github.com/Storm99999/githubpp
 // @version      0.1
-// @description  A github theme utilization
+// @description  A github theme utilization tool
 // @author       Storm
 // @match        https://github.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
