@@ -10,6 +10,9 @@ Uses a `color dump` from gpptool to convert into a fully functional theme
 * Default Windows terminal: `gppcreator.exe -fmake C:\Users\%username%\source\repos\gpptool\gpptool\bin\Debug\colordump_1483348.txt`
 Make sure to actually replace the colordump path with your own that you obtained from `gpptool`
 
+# Recommendations
+If you are lost and do not understand what is meant by secondary color, it's basically like the **sidebar** of visual studio code, Screenshot the color of it, and https://imagecolorpicker.com can help you obtain the secondary color from the sidebar image.
+
 # What to do after
 Incase you want to help make gpp more great, you can open a pull request and add in the theme, it must not be total garbage though. Otherwise if it's for your private use, do not worry. Theres a guide.
 * Create a GitHub Repository
