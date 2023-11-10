@@ -10,3 +10,6 @@ The gpptool exe is open source, and is on the Releases tab
 
 # What does gpptool do?
 GPPTool outputs a color dump, which can be used to get the most important things for a github theme.
+
+# Preview
+![image](https://github.com/Storm99999/githubpp/assets/87811650/a2ad3bf0-86ce-43fe-8aa7-852f518a92f2)
