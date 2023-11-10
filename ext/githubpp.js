@@ -12,7 +12,7 @@
 (function() {
     'use strict';
 
-    var theme = "Dracula"
+    var theme = "TokyoNight"
 
     function main() {
         const injectCSS = css => {
@@ -24,10 +24,12 @@
         };
 
         let theme_storage = {
-            "Dracula": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/dracula/dracula_main.css"
+            "Dracula": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/dracula/dracula_main.css",
+            "TokyoNight": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/tokyo_night/tokyo_night_main.css"
         };
 
-        if (theme == "Dracula") { fetch(theme_storage['Dracula']).then(response => response.text()).then(data => injectCSS(data)).catch(error => console.error('Error:', error)); };
+        // Injection process
+        fetch(theme_storage[theme]).then(response => response.text()).then(data => injectCSS(data)).catch(error => console.error('Error:', error));
     }
 
     main();
