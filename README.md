@@ -1,5 +1,8 @@
 # GitHubPP
-Official GitHub++ Repository 
+Official GitHub++ Repository.
+
+# What is this?
+GitHub++ is an unofficial github theming utility, which aims to give squeeze out all the beauty out of github, and includes the fancy eye-candy everyone loves!
 
 # Quick Switching
 If you want to quick switch your theme, press the `minus` key (-)
@@ -17,6 +20,8 @@ Switch your default theme to "Dark dimmed" in Settings -> Appearance
 # Preview
 Extended previews, of all themes, can be found in ./preview/ 
 ![](https://media.discordapp.net/attachments/1153048987700559873/1172304920620310648/image.png?ex=655fd509&is=654d6009&hm=a7bdcddba85a24910202ef7d792bde72bb9fe4c50308ee9f60662b71d4237add&=&width=1175&height=671)
+![image](https://github.com/Storm99999/githubpp/assets/87811650/614b129b-e683-42d8-98ff-ffccd3837fe4)
+
 
 # Contributions
 Contributions are always appreciated as i'm the only one working on this project. Open a pull request with your additions/changes and I'll look into it.
