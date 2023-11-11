@@ -60,7 +60,7 @@
             .then(response => response.json())
             .then(themeStorage => {
                 let themeSelect = document.createElement('select');
-                // Populate
+                // populate
                 for (let themev in themeStorage) {
                     let option = document.createElement('option');
                     option.value = themev;
@@ -103,7 +103,13 @@
 
 
     document.addEventListener('keydown', (event) => {
-        if (event.key === '-') {
+        const activeElement = document.activeElement;
+        const isInputOrTextarea = activeElement.tagName === 'INPUT' ||
+                              activeElement.tagName === 'TEXTAREA' ||
+                              (activeElement.hasAttribute('contenteditable') &&
+                               activeElement.getAttribute('contenteditable').toLowerCase() === 'true');
+
+        if (!isInputOrTextarea && event.key === '-') {
             showThemeSelector();
         }
     });
