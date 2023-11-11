@@ -6,7 +6,7 @@ GitHub++ is an unofficial github theming utility, which aims to give squeeze out
 
 # Quick Switching
 ![image](https://github.com/Storm99999/githubpp/assets/87811650/b6758a06-b9b3-44a8-897b-bb71aeef4afe)
-If you want to quick switch your theme, press the `minus` key (-)
+* If you want to quick switch your theme, press the `minus` key (-)
 
 
 # Requirements
