@@ -9,9 +9,8 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
-
     var theme = "Aura"
 
     function main() {
@@ -23,11 +22,9 @@
             return x;
         };
 
-        // Fetch themes.json dynamically
         fetch('https://raw.githubusercontent.com/Storm99999/githubpp/main/src/theme_list.json')
             .then(response => response.json())
             .then(theme_storage => {
-                // Check if the selected theme exists in the retrieved data
                 if (theme_storage[theme]) {
                     fetch(theme_storage[theme])
                         .then(response => response.text())
@@ -39,6 +36,78 @@
             })
             .catch(error => console.error('Error fetching themes.json:', error));
     }
+
+    const showThemeSelector = () => {
+        let existingDropdown = document.getElementById('theme-selector-dropdown');
+        if (existingDropdown) {
+            for (let i = 0; i <= 300; i++) {
+                existingDropdown.remove();
+            }
+
+            return;
+        }
+
+        let dropdownContainer = document.createElement('div');
+        dropdownContainer.id = 'theme-selector-dropdown';
+        dropdownContainer.style.position = 'fixed';
+        dropdownContainer.style.top = '0';
+        dropdownContainer.style.left = '0';
+        dropdownContainer.style.padding = '30px';
+        dropdownContainer.style.background = '#1f1f1f';
+        dropdownContainer.style.border = '1px solid #ccc';
+        dropdownContainer.style.zIndex = '9999';
+        fetch("https://raw.githubusercontent.com/Storm99999/githubpp/main/src/theme_list.json")
+            .then(response => response.json())
+            .then(themeStorage => {
+                let themeSelect = document.createElement('select');
+                // Populate
+                for (let themev in themeStorage) {
+                    let option = document.createElement('option');
+                    option.value = themev;
+                    option.text = themev;
+                    themeSelect.appendChild(option);
+                }
+
+                themeSelect.value = theme;
+                themeSelect.addEventListener('change', (event) => {
+                    theme = event.target.value;
+                    fetch('https://raw.githubusercontent.com/Storm99999/githubpp/main/src/theme_list.json')
+                        .then(response => response.json())
+                        .then(theme_storage => {
+                            // Check if the selected theme exists in the retrieved data
+                            if (theme_storage[theme]) {
+                                // Inject the selected theme's CSS
+                                const injectCSS = css => {
+                                    let x = document.createElement('style');
+                                    x.type = ('text/css'); // deprecated, but I do not give two shits
+                                    x.innerText = css;
+                                    document.head.appendChild(x);
+                                    return x;
+                                };
+                                fetch(theme_storage[theme])
+                                    .then(response => response.text())
+                                    .then(data => injectCSS(data))
+                                    .catch(error => console.error('Error:', error));
+                            } else {
+                                console.error('Error: Theme not found in themes.json');
+                            }
+                        })
+                        .catch(error => console.error('Error fetching themes.json:', error));
+                });
+
+                dropdownContainer.appendChild(themeSelect);
+                document.body.appendChild(dropdownContainer);
+            })
+            .catch(error => console.error('Error fetching themes.json:', error));
+    };
+
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === '-') {
+            showThemeSelector();
+        }
+    });
+
 
     main();
 })();
