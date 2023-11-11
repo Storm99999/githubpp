@@ -9,3 +9,10 @@
 
 # Jellybeans
 ![image](https://github.com/Storm99999/githubpp/assets/87811650/77afe116-960f-4244-b6f1-676ecce09782)
+
+# Electron
+![image](https://github.com/Storm99999/githubpp/assets/87811650/cb50fe93-7f1a-4df0-a293-661b9517c936)
+
+
+# Abyss
+![image](https://github.com/Storm99999/githubpp/assets/87811650/f00e58e9-b8b6-42c8-b6f9-4245aac946dc)
