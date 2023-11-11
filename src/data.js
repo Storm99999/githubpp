@@ -6,4 +6,4 @@ let theme_storage = {
     "CustomTestTheme": "https://raw.githubusercontent.com/Storm99999/githubpp/main/tests/theme2.css"
 };
 
-module.exports = theme_storage;
+return theme_storage
