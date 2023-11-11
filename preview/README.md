@@ -6,3 +6,6 @@
 
 # Aura
 ![](https://media.discordapp.net/attachments/1170748927927140506/1172619580397604895/image.png?ex=6560fa16&is=654e8516&hm=dcf30d418c04d6f89ad9aa14d6841d50f279eef5ac527a684e1df1097cf66ccb&=&width=944&height=671)
+
+# Jellybeans
+![image](https://github.com/Storm99999/githubpp/assets/87811650/77afe116-960f-4244-b6f1-676ecce09782)
