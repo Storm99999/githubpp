@@ -12,7 +12,7 @@
 (function () {
     'use strict';
     const url = "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/theme_list.json?timestamp=" + new Date().getTime();
-    var theme = "Dracula"
+    var theme = "Stormy"
 
     function main() {
         const injectCSS = css => {
@@ -148,6 +148,28 @@
         }
     });
 
+    if (theme == "Stormy"){
+        function check(){
+            const README = document.querySelector('.Box.mt-4');
+            if (README){
+                README.style.boxShadow = '0 0 10px 3px hotpink';
+            }
 
+            const editProf = document.querySelector('.js-profile-editable-edit-button');
+            if (editProf){
+                editProf.style.boxShadow = '0 0 10px 3px hotpink';
+                editProf.style.background = 'hotpink';
+                editProf.style.color = 'white';
+            }
+
+            const organiz = document.querySelector('span.p-org');
+            if (organiz){
+                organiz.style.color = 'hotpink';
+                organiz.style.textShadow = '0 0 5px hotpink';
+            }
+        }
+
+        setInterval(check, 10)
+    }
     main();
 })();
