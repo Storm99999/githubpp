@@ -1,6 +1,9 @@
 # GitHubPP
 Official GitHub++ Repository 
 
+# Quick Switching
+If you want to quick switch your theme, press the `minus` key (-)
+
 # Requirements
 Switch your default theme to "Dark dimmed" in Settings -> Appearance
 
