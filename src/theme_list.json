@@ -5,5 +5,6 @@
     "Jellybeans": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/jellybeans/jellybeans_main.css",
     "CustomTestTheme": "https://raw.githubusercontent.com/Storm99999/githubpp/main/tests/theme2.css",
     "Electron": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/electron/electron_main.css",
-    "Abyss": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/abyss/abyss_main.css"
+    "Abyss": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/abyss/abyss_main.css",
+    "Stormy": "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/themes/dracula/dracula_main.css"
 }
