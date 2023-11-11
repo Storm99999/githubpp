@@ -11,7 +11,8 @@
 
 (function () {
     'use strict';
-    var theme = "Aura"
+    const url = "https://raw.githubusercontent.com/Storm99999/githubpp/main/src/theme_list.json?timestamp=" + new Date().getTime();
+    var theme = "Dracula"
 
     function main() {
         const injectCSS = css => {
@@ -22,7 +23,7 @@
             return x;
         };
 
-        fetch('https://raw.githubusercontent.com/Storm99999/githubpp/main/src/theme_list.json')
+        fetch(url)
             .then(response => response.json())
             .then(theme_storage => {
                 if (theme_storage[theme]) {
@@ -58,13 +59,16 @@
         dropdownContainer.style.zIndex = '9999';
         dropdownContainer.style.borderRadius = '10px'; // Rounded corners
         dropdownContainer.style.zIndex = '9999';
+        dropdownContainer.style.maxHeight = '800px';
+        dropdownContainer.style.overflowY = 'auto';
 
         // Add fancy purple glow, yes!
         dropdownContainer.style.boxShadow = '0 0 10px 5px rgba(128, 0, 128, 0.7)';
 
-        fetch("https://raw.githubusercontent.com/Storm99999/githubpp/main/src/theme_list.json")
+        fetch(url)
             .then(response => response.json())
             .then(themeStorage => {
+                console.log(themeStorage);
                 let themeSelect = document.createElement('select');
                 // populate
                 for (let themev in themeStorage) {
@@ -72,12 +76,13 @@
                     option.value = themev;
                     option.text = themev;
                     themeSelect.appendChild(option);
+                    console.log(themev);
                 }
 
                 themeSelect.value = theme;
                 themeSelect.addEventListener('change', (event) => {
                     theme = event.target.value;
-                    fetch('https://raw.githubusercontent.com/Storm99999/githubpp/main/src/theme_list.json')
+                    fetch(url)
                         .then(response => response.json())
                         .then(theme_storage => {
                             // Check if the selected theme exists in the retrieved data
@@ -94,6 +99,29 @@
                                     .then(response => response.text())
                                     .then(data => injectCSS(data))
                                     .catch(error => console.error('Error:', error));
+                                if (theme == "Stormy"){
+                                    function check(){
+                                        const README = document.querySelector('.Box.mt-4');
+                                        if (README){
+                                            README.style.boxShadow = '0 0 10px 3px hotpink';
+                                        }
+
+                                        const editProf = document.querySelector('.js-profile-editable-edit-button');
+                                        if (editProf){
+                                            editProf.style.boxShadow = '0 0 10px 3px hotpink';
+                                            editProf.style.background = 'hotpink';
+                                            editProf.style.color = 'white';
+                                        }
+
+                                        const organiz = document.querySelector('span.p-org');
+                                        if (organiz){
+                                            organiz.style.color = 'hotpink';
+                                            organiz.style.textShadow = '0 0 5px hotpink';
+                                        }
+                                    }
+
+                                    setInterval(check, 10)
+                                }
                             } else {
                                 console.error('Error: Theme not found in themes.json');
                             }
