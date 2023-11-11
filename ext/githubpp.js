@@ -50,12 +50,18 @@
         let dropdownContainer = document.createElement('div');
         dropdownContainer.id = 'theme-selector-dropdown';
         dropdownContainer.style.position = 'fixed';
-        dropdownContainer.style.top = '0';
-        dropdownContainer.style.left = '0';
-        dropdownContainer.style.padding = '30px';
+        dropdownContainer.style.top = '50%';
+        dropdownContainer.style.left = '50%';
+        dropdownContainer.style.transform = 'translate(-50%, -50%)';
+        dropdownContainer.style.padding = '10px';
         dropdownContainer.style.background = '#1f1f1f';
-        dropdownContainer.style.border = '1px solid #ccc';
         dropdownContainer.style.zIndex = '9999';
+        dropdownContainer.style.borderRadius = '10px'; // Rounded corners
+        dropdownContainer.style.zIndex = '9999';
+
+        // Add fancy purple glow, yes!
+        dropdownContainer.style.boxShadow = '0 0 10px 5px rgba(128, 0, 128, 0.7)';
+
         fetch("https://raw.githubusercontent.com/Storm99999/githubpp/main/src/theme_list.json")
             .then(response => response.json())
             .then(themeStorage => {
