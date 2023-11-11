@@ -1,1 +1,1 @@
-return ['Dracula', 'TokyoNight', 'Aura', 'Jellybeans', 'Electron', 'CustomTestTheme', 'Abyss'] 
+return ['Dracula', 'TokyoNight', 'Aura', 'Jellybeans', 'Electron', 'CustomTestTheme', 'Abyss', 'Stormy'] 
