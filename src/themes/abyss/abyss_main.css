@@ -46,10 +46,10 @@
     --color-search-keyword-hl: rgba(198,144,38,0.4);
     --color-prettylights-syntax-comment: #6272A4;
     --color-prettylights-syntax-constant: #BD93F9;
-    --color-prettylights-syntax-entity: #7a5aad;
+    --color-prettylights-syntax-entity: #58519f;
     --color-prettylights-syntax-storage-modifier-import: #adbac7;
-    --color-prettylights-syntax-entity: #7a5aad;
-    --color-prettylights-syntax-keyword: #1220ec;
+    --color-prettylights-syntax-entity: #58519f;
+    --color-prettylights-syntax-keyword: #58519f;
     --color-prettylights-syntax-string: #169437;
     --color-prettylights-syntax-variable: #9966b8;
     --color-prettylights-syntax-brackethighlighter-unmatched: #e5534b;
