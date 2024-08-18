@@ -1,0 +1,134 @@
+/**
+ * @name ClearVisionModded
+ * @author slidexlr
+ * @version 1.0.0
+ * @description ClearVision Mod 
+ */
+
+/* IMPORT CSS */
+@import url(https://clearvision.github.io/ClearVision-v6/main.css);
+
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #ffac33; /* Dragon Ball orange */
+  --hover-color: #ff8c00; /* Darker orange for hover effect */
+  --success-color: #43b581; /* Success color (unchanged) */
+  --danger-color: #982929; /* Danger color (unchanged) */
+  --url-color: var(--main-color); /* Orange for URL links */
+
+  /* STATUS COLORS */
+  --online-color: #43b581; /* Online status color (unchanged) */
+  --idle-color: #faa61a; /* Yellow for idle status */
+  --dnd-color: #982929; /* Red for DND status */
+  --streaming-color: #593695; /* Deep purple for streaming status */
+  --offline-color: #808080; /* Gray for offline status */
+
+  /* GENERAL */
+  --main-font: 'gg sans', Helvetica Neue, Helvetica, Arial, sans-serif; /* Set to gg sans */
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* Code font */
+  --text-normal: rgb(255, 255, 255); /* White text */
+  --text-muted: rgb(200, 200, 200); /* Light gray muted text */
+  --channels-width: 220px; /* Channel list width */
+  --members-width: 240px; /* Member list width */
+
+  /* APP BACKGROUND */
+  --background-image: url(https://cdn.discordapp.com/attachments/1247138777969721367/1274821849213042750/892ab776279414977933b566575cf62d.png); /* Dragon Ball background */
+  --background-position: center center; 
+  --background-size: cover; 
+  --background-repeat: no-repeat; 
+  --background-attachment: fixed; 
+  --background-color: rgba(0, 0, 0, 0.6); /* Fallback color */
+
+  /* EMOJI FIX */
+  img.emoji, img.emoji-large {
+    filter: none !important; /* Prevent color alteration on emojis */
+  }
+
+  /* USERNAME COLOR FIX */
+  .username, .username-1A8OIy, .mention, .mention-3NCwQP {
+    color: inherit !important; /* Retain original username and mention colors */
+    filter: none !important;
+  }
+
+  /* PING FIX */
+  .mention:hover, .mention:hover::before, .mention:hover::after, .mention {
+    color: inherit !important; /* Retain original ping color */
+    background-color: inherit !important;
+    filter: none !important;
+  }
+
+  /* NOTIFICATION ICONS FIX */
+  .icon-22AiRD, .icon-2xnN2Y, .icon-1S6UIh, .icon-3NAB2B, .icon-3kWlR9, .badge-3KUrji, .badge {
+    color: inherit !important; /* Retain original notification icon color */
+    filter: none !important;
+  }
+
+  /* STATUS ACTIVITY FIX */
+  .activity-2IMlRP, .activityStatus-2Tws-1, .activityText-3cz5cS {
+    color: inherit !important; /* Retain original status activity color */
+    filter: none !important;
+  }
+
+  /* HOME BUTTON ICON */
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg); /* Discord icon */
+  --home-position: center; 
+  --home-size: 40px;
+
+  /* CHANNEL COLORS */
+  --channel-unread: var(--main-color); /* Unread channel color */
+  --channel-color: rgba(255, 255, 255, 0.3); 
+  --channel-text-selected: #fff; /* Selected channel text */
+  --muted-color: rgba(255, 255, 255, 0.1); 
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(0, 0, 0, 0.8); 
+  --backdrop-image: var(--background-image); 
+  --backdrop-position: var(--background-position); 
+  --backdrop-size: var(--background-size); 
+  --backdrop-repeat: var(--background-repeat); 
+  --backdrop-attachment: var(--background-attachment); 
+  --backdrop-brightness: var(--background-brightness); 
+  --backdrop-contrast: var(--background-contrast); 
+  --backdrop-saturation: var(--background-saturation); 
+  --backdrop-invert: var(--background-invert); 
+  --backdrop-grayscale: var(--background-grayscale); 
+  --backdrop-sepia: var(--background-sepia); 
+  --backdrop-blur: var(--background-blur);
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: var(--background-image); 
+  --user-popout-position: var(--background-position); 
+  --user-popout-size: var(--background-size); 
+  --user-popout-repeat: var(--background-repeat); 
+  --user-popout-attachment: var(--background-attachment); 
+  --user-popout-brightness: var(--background-brightness); 
+  --user-popout-contrast: var(--background-contrast); 
+  --user-popout-saturation: var(--background-saturation); 
+  --user-popout-invert: var(--background-invert); 
+  --user-popout-grayscale: var(--background-grayscale); 
+  --user-popout-sepia: var(--background-sepia); 
+  --user-popout-blur: calc(var(--background-blur) + 3px); 
+  --user-popout-overlay: rgba(0, 0, 0, 0.6); 
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: var(--background-image); 
+  --user-modal-position: var(--background-position); 
+  --user-modal-size: var(--background-size); 
+  --user-modal-repeat: var(--background-repeat); 
+  --user-modal-attachment: var(--background-attachment); 
+  --user-modal-brightness: var(--background-brightness); 
+  --user-modal-contrast: var(--background-contrast); 
+  --user-modal-saturation: var(--background-saturation); 
+  --user-modal-invert: var(--background-invert); 
+  --user-modal-grayscale: var(--background-grayscale); 
+  --user-modal-sepia: var(--background-sepia); 
+  --user-modal-blur: calc(var(--background-blur) + 3px); 
+}
+
+/* APPLY BACKGROUND TO APP */
+html, body {
+  background: var(--background-image) no-repeat center center fixed;
+  background-size: cover;
+  background-color: var(--background-color); /* Fallback color */
+}
